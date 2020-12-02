@@ -1,0 +1,327 @@
+/* CSS files add styling rules to your content */
+body {
+  font-family: 'Alegreya', serif;
+  font-size: 12px;
+  /* margin: 60px; */
+  overflow: hidden;
+}
+
+div.top {
+ display: flex;
+ position: relative;
+ top: 40px;
+ left: 40px;
+ min-width: 100vw;
+ z-index: 4;
+}
+
+sup {
+  font-size:xx-small;
+  vertical-align:super;
+}
+
+.italic {
+  font-style: italic;
+}
+
+a, .blue {
+  color: #0000ee;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover, .blue:hover {
+  color: #000089;
+}
+
+a.no-blue {
+  text-decoration: none !important;
+  color: #000 !important;
+}
+
+div.margin {
+  margin-right: 20px;
+}
+
+div.logo img {
+  width: 150px;
+}
+
+div.on {
+  position: absolute;
+  bottom: 200px;
+  right: 200px;
+}
+
+.subscribe {
+  /* align-self: flex-end !important; */
+  margin-left: auto;
+  transform: translateX(-100px);
+  /* float: right; */
+}
+
+div.on h1 {
+  font-style: italic;
+}
+
+div.on img {
+  width: 300px;
+}
+
+div.contact {
+  margin-top: 10px;
+}
+
+div.archive {
+  margin-top: 10px;
+  position: relative;
+  display: inline-block !important;
+  float: left;
+  height: 20px;
+}
+
+div.archive:hover {
+  color: #000089
+}
+
+div.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+div.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.archive:hover .dropdown-content {display: block;}
+.archive:hover .archiveBtn {color: #000089}
+
+.container {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 75vh;
+  width: 100vw;
+  z-index: 1;
+  /* background-color: #000; */
+}
+
+div.documentation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1 !important;
+  /* font-size: 14px; */
+  /* justify-content: center; */
+}
+
+.line::before{
+    display: inline-block;
+    content: "";
+    border-top: 1px solid black;
+    width: 100%;
+    transform: translateY(-8px);
+}
+
+.line::after{
+    display: inline-block;
+    content: "";
+    border-top: 1px solid black;
+    width: 100%;
+    transform: translateY(8px);
+}
+
+.padding {
+  padding: 40px;
+}
+
+.padding-large {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.padding-body {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.padding-body-large {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+div.documentation p {
+  width: 50vw;
+  /* padding: 40px; */
+}
+
+div.documentation img {
+  width: 50vw;
+  height: auto;
+  /* padding-left: 40px; */
+  /* padding-right: 40px; */
+  padding: 40px;
+}
+
+div.documentation video {
+  width: 50vw !important;
+  height: auto !important;
+  padding: 40px;
+}
+
+div.documentation-title {
+  padding: 40px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  z-index: 1;
+}
+
+div.documentation-title h1, div.documentation p.bold {
+  font-weight: 500;
+}
+
+.move {
+  transform: translateY(-35px);
+  padding-left: 40px;
+}
+
+.last-image {
+  margin-bottom: 40px;
+}
+
+
+/* Audio Player ===================== */
+figure.audio-controler {
+  padding: 20px;
+}
+
+.acBottom {
+  margin-bottom: 40px;
+}
+
+figcaption.audio-title {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+/* Audio Player ===================== */
+
+@media only screen and (max-width: 900px) {
+  .subscribe {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+  margin: 20px;
+}
+
+  div.top {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  /* position: relative; */
+  top: 20px;
+  left: 20px;
+  min-width: 100vw;
+  z-index: 4;
+}
+
+  div.on {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+  div.on img {
+  width: 250px;
+}
+
+/*   div.logo {
+    order: -1;
+  } */
+
+  div.logo {
+    position: fixed;
+    top: 5px;
+    right: 0;
+  }
+
+  div.title {
+   margin-bottom: 10px;
+  }
+
+  div.logo img {
+  width: 75px
+}
+
+/*   div.address {
+    margin-left: 120px;
+  } */
+
+  div.contact {
+    padding-top: 15px;
+    margin-right: 40px;
+    align-self: flex-end;
+  }
+
+/*   div.archive {
+    margin;
+  } */
+
+  div.about {
+    margin-left: 15vw;
+}
+
+div.documentation p {
+  width: 90vw;
+  /* padding: 40px; */
+}
+
+div.documentation img {
+  width: 90vw;
+  height: auto;
+  padding: 20px;
+}
+
+div.documentation video {
+  width: 90vw !important;
+  height: auto !important;
+  padding: 20px;
+}
+
+.move {
+  transform: translateY(-18px);
+  padding-left: 20px;
+}
+
+.subscribe {
+  padding-top: 0px;
+}
+
+/* .archive:hover .dropdown-content {display: none;} */
+
+.dropDownOpen {
+  display: block !important;
+}
+
+}
