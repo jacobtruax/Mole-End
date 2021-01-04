@@ -39,6 +39,14 @@ a.no-blue {
   color: #000 !important;
 }
 
+iframe {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 45vw;
+  height: 45vh;
+}
+
+
 div.margin {
   margin-right: 20px;
 }
@@ -59,6 +67,7 @@ div.on {
   transform: translateX(-100px);
   /* float: right; */
 }
+
 
 div.on h1 {
   font-style: italic;
@@ -233,6 +242,13 @@ figcaption.audio-title {
 @media only screen and (max-width: 750px) {
   body {
   margin: 20px;
+}
+
+iframe {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 80vw;
+  height: 40vh;
 }
 
   div.top {
